@@ -1,0 +1,12 @@
+<div class="bot-message">
+  <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+  <style>
+    @keyframes acenar {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(25deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-25deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</div> 

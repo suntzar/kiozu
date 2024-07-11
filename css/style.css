@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Flow+Rounded&family=M+PLUS+Rounded+1c&family=Varela+Round&display=swap');
+:root
+{
+  --color : #c5c3c4;
+  --scl: 1.4; /* Adicionei a variável de peso aqui */
+  --font: calc(0.9rem * var(--scl));
+  --gradient: linear-gradient(
+    45deg,
+    #a2c2df,
+    #97afe9,
+    #a7abee,
+    #c6abf4
+  );
+}
+
+*
+{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: console;
+  font-family: "Flow Rounded", system-ui;
+  font-family: "Varela Round", sans-serif;
+  word-break: break-word;
+}
+
+body
+{
+  min-height: 100vh;
+  background: var(--color-b);
+  color: var(--color-f);
+  position: fixed;
+}
+
+.container
+{
+  width: 100vw; /* Usei a variável de peso aqui */
+  height: 80vh; 
+}
+
+.top-bar
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(5rem * var(--scl)); 
+  font-size: calc(1rem * var(--scl));
+  top: 0px;
+  width: 100vw;
+  border-radius: 0 0 calc(1rem * var(--scl)) calc(1rem * var(--scl));
+  padding: calc(1.4rem * var(--scl));
+  background-color: var(--color-d);
+  color: var(--color-f);
+}
+
+.chat-container
+{
+  position: relative;
+  top: 5vw; 
+  font-size: calc(1rem * var(--scl));
+  margin: auto;
+  width: 90vw; 
+  height: 100%;
+  border: calc(5px * var(--scl)) solid var(--color-d); 
+  border-radius: calc(2rem * var(--scl)); 
+  overflow: hidden;
+}
+
+.chat
+{
+}
+
+.input-bar
+{
+  display: flex;
+  align-items: center;
+  font-size: calc(1rem * var(--scl));
+  bottom: 0px;
+  margin: 0 calc(1rem * var(--scl)) calc(1rem * var(--scl));
+  padding: calc(0.5rem * var(--scl));
+  width: calc(100% - calc(2rem * var(--scl))); 
+  height: calc(4rem * var(--scl)); 
+  background-color: var(--color-d);
+  border-radius: calc(0.8rem * var(--scl)); 
+}
+
+.input-field
+{
+  width: 100%; /* Usei a variável de peso aqui */
+  height: 100%; 
+  font-size: calc(1rem * var(--scl));
+  background-color: transparent;
+  color: var(--color-f);
+  border: none;
+  outline: none;
+  padding: 0 calc(1rem * var(--scl)); 
+  caret-color: var(--color-p);
+}
+
+::placeholder {
+  color: var(--color-l);
+  opacity: 0.3;
+}
+
+.aling-input
+{
+  background-color: var(--color-b);
+  width: 100%; 
+  position: absolute;
+  bottom: 0px;
+  border-radius: calc(3rem * var(--scl)) calc(3rem * var(--scl)) 0 0; 
+  box-shadow: 0 0 calc(1rem * var(--scl)) var(--color-b); 
+}
+
+.aling-chat
+{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: calc(1rem * var(--scl));
+  margin-bottom: calc(1rem * var(--scl));
+}
+
+.send
+{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(1rem * var(--scl));
+  width: calc(4rem * var(--scl)); 
+  height: 100%;
+  background-color: var(--color-p);    
+  /*animation: gradient-anim 3s linear infinite alternate;*/
+  color: var(--color-f);
+  border-radius: calc(0.8rem * var(--scl)); 
+  border: none;
+  outline: none;
+}
+.user-message
+{
+  width: 100%; /* Usei a variável de peso aqui */
+  padding: calc(1rem * var(--scl));
+  margin-bottom: calc(1rem * var(--scl));
+  background-color: var(--color-p);    
+  /*animation: gradient-anim 3s linear infinite alternate;*/
+  color: var(--color-d);
+  border: calc(3px * var(--scl)) solid var(--color-d); 
+  border-radius: calc(0.8rem * var(--scl)); 
+}
+
+.bot-message, .load-msg
+{
+  width: 100%; 
+  padding: calc(1rem * var(--scl));
+  margin-bottom: calc(1rem * var(--scl));
+  background-color: var(--color-d);
+  color: var(--color-f);
+  border: none;
+  border-radius: calc(0.8rem * var(--scl)); 
+}
+
+.load-msg
+{
+  padding: calc(1rem * var(--scl)) calc(0.5rem * var(--scl)) calc(0.5rem * var(--scl));
+  top: calc(0.2rem * var(--scl));
+  opacity: 0;
+  transform: scale(0);
+  transition: 1s;
+  transition-timing-function: ease;
+}
+
+.icon 
+{
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon-b
+{
+  background-color: transparent;
+  position: absolute;
+  bottom: 0;
+  background-color: var(--color-d);
+  transform: translate(0, 50%);
+  right: calc(2rem * var(--scl)); 
+  width: calc(3rem * var(--scl)); 
+  height: calc(3rem * var(--scl)); 
+  border-radius: calc(1rem * var(--scl)); 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: calc(5px * var(--scl)) solid var(--color-b); 
+  outline: none;
+}
+
+@keyframes appear 
+{
+  from {
+    transform: translateY(calc(1.5rem * var(--scl))); 
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+@keyframes colorChange {
+  0% { background-color: #a2c2df; /* Violeta Elétrico */ }
+  25% { background-color: #c6abf4; /* Violeta Elétrico */ }
+  50% { background-color: #a7abee; /* Azul Celeste */ }
+  75% { background-color: #97afe9; /* Violeta Elétrico */ }
+  100% { background-color: #a2c2df; /* Azul Celeste */ }
+}
+
+@keyframes gradient-anim {
+  0% {
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-position: left;
+  }
+  100% {
+    background-image: var(--gradient);
+    background-size: 200%;
+    background-position: right;
+  }
+}

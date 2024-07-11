@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Chatbot interativo Kiozu</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <script src="https://kit.fontawesome.com/9212850483.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <div class="top-bar">
+      <h3>Kiozu bot</h3>
+      <button class="icon-b" id="debug" onclick="debug()">
+        <lord-icon class="lord"
+          src="https://cdn.lordicon.com/eodeknny.json"
+          trigger="click"
+          colors="primary:#fff"
+          style="width:80%;height:80%">
+        </lord-icon>
+      </button>
+    </div>
+    <div class="container">
+      <div class="chat-container">
+        <div class="aling-chat">
+          <div class="chat" id="chat"></div>
+          <div class="load-msg">
+            <lord-icon 
+              class="icon"
+              src="https://cdn.lordicon.com/jpgpblwn.json"
+              trigger="loop"
+              colors="primary:#ffffffe1"
+              style="width:calc(1.5rem * var(--scl));height:calc(1.5rem * var(--scl))">
+            </lord-icon>
+          </div>
+          <div class="end-line" style="padding:  calc(2rem * var(--scl));"></div>
+        </div>
+        <div class="aling-input">
+          <div class="input-bar">
+            <input type="text" class="input-field" placeholder="Digite sua mensagem...">
+            <button class="send"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="importmap">
+      {
+        "imports": {
+          "@google/generative-ai": "https://esm.run/@google/generative-ai"
+        }
+      }
+    </script>
+    <script type="module" src="js/script.js"></script>
+  </body>
+</html>
