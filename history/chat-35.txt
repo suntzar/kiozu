@@ -1,0 +1,53 @@
+<div class="bot-message">
+  <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+  <style>
+    @keyframes acenar {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(25deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-25deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</div> <div class="user-message">
+  <p>Sobre você, faça um README.md (retorne o código no formato de leitura md)</p>
+</div>
+<div class="bot-message">
+  <p style="color: var(--color-f);"> <span style="color: var(--color-p);"><i class="fas fa-file-code"></i></span> Aqui está meu README.md, tudo prontinho para você! 😄</p>
+  <pre style="background-color: #282730; color: var(--color-f); padding: 15px; border-radius: 10px; overflow: auto; font-family: 'Courier New', Courier, monospace;">    <span style="color: #A2CEDF;"># Kiozu - Seu Guia Especialista do PAES UEMA </span><br>
+
+    <span style="color: #A2CEDF;"><!-- Olá! Este é o Kiozu, um chatbot super inteligente pronto para te ajudar na jornada do PAES UEMA. Desenvolvido com a magia do HTML, CSS e JavaScript, ele está equipado para tornar seus estudos mais interativos e divertidos. --></span><br>
+
+    ##  <span style="color: #FEA983;">Minhas Habilidades:</span>
+
+    *   <span style="color: #FFF082;">(</span><span style="color: #EE93B3;">🧠</span><span style="color: #FFF082;">)</span> <span style="color: #A2CEDF;"><!-- Posso responder perguntas sobre o PAES UEMA --></span> Sou um especialista no PAES UEMA e estou aqui para responder às suas perguntas sobre a prova, conteúdo, dicas de estudo e muito mais! 
+    *   <span style="color: #FFF082;">(</span><span style="color: #EE93B3;">🎨</span><span style="color: #FFF082;">)</span> <span style="color: #A2CEDF;"><!-- Apresento as informações de forma visualmente organizada e agradável com HTML e CSS. --></span> Utilizo HTML e CSS para criar flashcards interativos, tabelas e elementos visuais que tornam o aprendizado mais envolvente.
+    *   <span style="color: #FFF082;">(</span><span style="color: #EE93B3;">🚀</span><span style="color: #FFF082;">)</span> <span style="color: #A2CEDF;"><!--  Posso exibir imagens e vídeos para tornar o aprendizado mais dinâmico. --></span>  Abordo assuntos complexos de forma simples e fácil de entender, com exemplos e ilustrações.
+
+    ##  <span style="color: #FEA983;">Como Funciona:</span>
+
+    <span style="color: #A2CEDF;"><!-- Sou programado para seguir instruções específicas para garantir interações claras e eficientes. --></span>
+
+    1.  <span style="color: #A2CEDF;"><!--  Você me envia uma mensagem. --></span> **Formato da Mensagem:** Escreva suas perguntas ou pedidos normalmente, como se estivesse conversando com uma pessoa.
+    2.  <span style="color: #A2CEDF;"><!-- Eu analiso seu pedido usando meus super poderes de processamento de linguagem natural. --></span> **Análise e Resposta:** Eu analiso sua mensagem para entender o que você precisa e gero uma resposta completa. 
+    3.  <span style="color: #A2CEDF;"><!-- Respondo com a informação solicitada, formatada de forma clara e organizada usando HTML e CSS. --></span> **Formatação:** A resposta é formatada usando HTML, CSS e até mesmo JavaScript para criar uma experiência interativa. 
+
+    ##  <span style="color: #FEA983;">Como Usar:</span>
+
+    <span style="color: #A2CEDF;"><!--  Basta digitar suas perguntas ou comandos na caixa de texto e clicar em "Enviar".  --></span>
+
+    **Exemplos:**
+
+    *   "Qual é a estrutura do PAES UEMA?"
+    *   "Me mostre um exemplo de questão de matemática."
+    *   "Crie um flashcard sobre a Primeira Guerra Mundial."
+
+    ##  <span style="color: #FEA983;">Observações:</span>
+
+    *   <span style="color: #A2CEDF;"><!-- Ainda estou em desenvolvimento, mas aprendo coisas novas a cada dia!  --></span> Estou em constante desenvolvimento para aprimorar minhas habilidades e oferecer a melhor experiência possível.
+    *   <span style="color: #A2CEDF;"><!--  Sua colaboração é fundamental para me ajudar a crescer e melhorar! --></span> Seus comentários e sugestões são muito importantes!
+
+    <span style="color: #A2CEDF;"><!-- Vamos começar?  --></span><br>
+  </pre>
+</div>
+
