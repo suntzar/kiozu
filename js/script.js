@@ -63,8 +63,6 @@ function pallet() {
 // copia o prompt para a clipboard
 function debug() {
   navigator.clipboard.writeText(chatp);
-  //alert("Prompt copiado com sucesso, conteudo:\n\n"+chatp);
-  //console.log(chatp)
 }
 
 // atualiza a animação do icone de enviar
@@ -72,6 +70,22 @@ function icbtnsend(trigger) {
   let loopic = '<lord-icon src="https://cdn.lordicon.com/mgtqmgmg.json" trigger="loop" state="loop-spin" colors="primary:#3F3D4A" style="width:0%;height:0%"> </lord-icon>';
   let clickic = '<lord-icon src="https://cdn.lordicon.com/ayhtotha.json" trigger="'+trigger+'" colors="primary:#3F3D4A" style="width:80%;height:80%"> </lord-icon>';
   document.querySelector('.send').innerHTML = clickic;
+}
+
+function timeNow() {
+  // Cria um objeto Date para a data e hora atuais
+  let hoje = new Date();
+
+  // Extrai as informações desejadas
+  let hora = hoje.getHours();
+  let minutos = hoje.getMinutes();
+  let dia = hoje.getDate();
+  let mes = hoje.getMonth() + 1; // Os meses em JavaScript vão de 0 a 11
+  let ano = hoje.getFullYear();
+
+  // Formata a saída
+  let dataFormatada = `\n\n<!-- Informações em tempo real: Hoje é dia ${dia}/${mes}/${ano}, e são ${hora}:${minutos}. -->\n`;
+  return dataFormatada;
 }
 
 // retorna uma imagem atravez de uma descrição
@@ -140,10 +154,13 @@ fetch(`/history/${hst}.txt`)
   }
 );
 
-function sendMessage() {
+async function sendMessage() {
   const userText = inputField.value;
   if (userText !== "" && cooldown) {
-      
+    
+    let time = await timeNow();
+    console.log(time);
+    
     loadMassage.style.transition= "1s";
     loadMassage.style.animation= "appear 0.5s ease";
     loadMassage.style.transform = "scale(1)";
@@ -156,7 +173,7 @@ function sendMessage() {
     getVid();
     
     chat.innerHTML += `<div class="user-message">\n  <p>${userText}</p>\n</div>\n`;
-    enviarMensagem(userText,prompt+chat.innerHTML);
+    enviarMensagem(userText,prompt+time+chat.innerHTML);
     inputField.value = '';
     cooldown = false;
   }
