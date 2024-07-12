@@ -84,7 +84,7 @@ function timeNow() {
   let ano = hoje.getFullYear();
 
   // Formata a saída
-  let dataFormatada = `\n\n<!-- Informações em tempo real: Hoje é dia ${dia}/${mes}/${ano}, e são ${hora}:${minutos}. -->\n`;
+  let dataFormatada = `\n\n<!-- Informações em tempo real(fique atento as seguintes informações, sempre utilize para responder perguntas ou saudações se necessario): Hoje é dia ${dia}/${mes}/${ano}, e são ${hora}:${minutos}. -->\n`;
   return dataFormatada;
 }
 
