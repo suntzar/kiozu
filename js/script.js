@@ -10,6 +10,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 
 const chat = document.getElementById("chat");
 
+const loadScreen = document.querySelector('.loadscreen');
 const userMessage = document.querySelector('.user-message');
 const botMessage = document.querySelector('.bot-message');
 const inputField = document.querySelector('.input-field');
@@ -224,7 +225,10 @@ inputField.addEventListener('keydown', (event) => {
 
 icbtnsend("none");
 window.addEventListener('load', pallet);
-
+window.addEventListener('load', () => {
+  loadScreen.style.opacity = 0;
+  loadScreen.style.zIndex = -1;
+});
 
 ///////// ANOTAÇÕES /////////
 /*

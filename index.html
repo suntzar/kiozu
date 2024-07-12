@@ -7,6 +7,22 @@
     <link rel="icon" type="image/png" href="favicon.png">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   </head>
+  <style>
+    .loadscreen {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 200vw;
+      height: 200vh;
+      background-color: #1c1b21;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      transition: 1s;
+      z-index: 100;
+    }
+  </style>
   <body>
     <script src="https://kit.fontawesome.com/9212850483.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
@@ -43,6 +59,9 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="loadscreen" id="loadscreen">
+      <!-- load -->
     </div>
     <script type="importmap">
       {
