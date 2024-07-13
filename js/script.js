@@ -55,7 +55,7 @@ function pallet() {
 
   link.setProperty('--color-f', '#e4e1e2');
   link.setProperty('--color-p', '#aea4e3');
-  link.setProperty('--color-s', '#5d5878');
+  link.setProperty('--color-s', '#aaa4cc');
   link.setProperty('--color-z', '#3F3D4A');
   link.setProperty('--color-d', '#313038');
   link.setProperty('--color-b', '#1c1b21');
