@@ -89,6 +89,11 @@ function timeNow() {
   return dataFormatada;
 }
 
+function getLang() {
+  let lang = navigator.language || navigator.userLanguage;
+  return `\n<!-- FALE COM O USUARIO NA LINGUA A SEGUIR POIS ESSA É A LINGUA DO USUARIO SEGUNDO O DISPOSITIVO DO USUARIO: ${lang} -->\n`;
+}
+
 // retorna uma imagem atravez de uma descrição
 function getImg() {
   let apiKey = "44797048-381ef955887bcab451564aada";
@@ -150,8 +155,18 @@ fetch(`/history/prompt.txt`)
 // retorna o prompt
 fetch(`/history/${hst}.txt`)
   .then((res) => res.text())
-  .then((texto) => {
-    chat.innerHTML = texto;
+  .then(async (texto) => {
+    let lang = await getLang();
+    
+    let model = genAI.getGenerativeModel({model: "gemini-1.5-flash"});
+    let result = await model.generateContent(lang+"\n<!-- RETORNE SOMENTE O CONTEUDO ABAIXO NA LINGUA DO USUARIO -->\n"+texto);
+    let response = await result.response;
+    let resposta = response.text();
+    
+    chat.innerHTML = resposta;
+    
+    loadScreen.style.opacity = 0;
+    loadScreen.style.zIndex = -1;
   }
 );
 
@@ -160,7 +175,7 @@ async function sendMessage() {
   if (userText !== "" && cooldown) {
     
     let time = await timeNow();
-    console.log(time);
+    let lang = await getLang();
     
     loadMassage.style.transition= "1s";
     loadMassage.style.animation= "appear 0.5s ease";
@@ -174,7 +189,7 @@ async function sendMessage() {
     getVid();
     
     chat.innerHTML += `<div class="user-message">\n  <p>${userText}</p>\n</div>\n`;
-    enviarMensagem(userText,prompt+time+chat.innerHTML);
+    enviarMensagem(userText,prompt+time+lang+chat.innerHTML);
     inputField.value = '';
     cooldown = false;
   }
@@ -225,10 +240,6 @@ inputField.addEventListener('keydown', (event) => {
 
 icbtnsend("none");
 window.addEventListener('load', pallet);
-window.addEventListener('load', () => {
-  loadScreen.style.opacity = 0;
-  loadScreen.style.zIndex = -1;
-});
 
 ///////// ANOTAÇÕES /////////
 /*
@@ -252,5 +263,10 @@ window.addEventListener('load', () => {
 
       // Adiciona a nova div à div principal
       divPrincipal.appendChild(usrDiv);
+      
+window.addEventListener('load', () => {
+  loadScreen.style.opacity = 0;
+  loadScreen.style.zIndex = -1;
+});
 
 */
