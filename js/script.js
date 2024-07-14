@@ -197,10 +197,28 @@ async function sendMessage() {
 
 async function enviarMensagem(userMsg,perg) {
 
-  const model = genAI.getGenerativeModel({model: "gemini-1.5-pro"});
-  const result = await model.generateContent(perg);
-  const response = await result.response;
-  const resposta = response.text();
+  let resposta = "";
+  let model = genAI.getGenerativeModel({model: "gemini-1.5-pro"});
+  try {
+    let result = await model.generateContent(perg);
+    let response = await result.response;
+    resposta = response.text();
+    cooldown = true;
+  } catch (error) {
+    cooldown = false;
+    resposta = `
+      <div class="bot-message" style="color: #e4e1e2;">
+        <p>
+          <span style="color: #FF8E82;">
+            <i class="fas fa-exclamation-triangle"></i> Opa!
+          </span> 
+          Parece que algo deu errado por aqui. <br>
+          Você poderia, por favor, reformular sua solicitação? 😊
+        </p>
+        <br>
+        <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: none;">Clique aqui para recomeçar</a> </div>
+      </div>`;
+  }
   
   text = `${resposta}\n`;
   chat.innerHTML += text;
@@ -213,7 +231,6 @@ async function enviarMensagem(userMsg,perg) {
   
   audio_bot.play();
   endLine.scrollIntoView({ block: "end", behavior: "smooth" });
-  cooldown = true;
   
   getImg();
   getVid();
