@@ -200,15 +200,15 @@ async function enviarMensagem(userMsg,perg) {
   let lang = await getLang();
   
   let model = genAI.getGenerativeModel({model: "gemini-1.5-pro"});
+  let resposta = "";
   
   try {
     let result = await model.generateContent(perg);
     let response = await result.response;
-    let resposta = response.text();
+    resposta = response.text();
     cooldown = true;
     
   } catch (error) {
-    
     cooldown = false;
     resposta = `
       <div class="bot-message" style="color: #e4e1e2;">
