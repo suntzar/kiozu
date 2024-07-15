@@ -195,6 +195,14 @@ body
   outline: none;
 }
 
+.ads 
+{
+  border-radius: calc(1rem * var(--scl));
+  overflow: hidden;
+  margin-bottom: calc(1rem * var(--scl));
+  background: var(--color-d);
+}
+
 @keyframes appear 
 {
   from {
