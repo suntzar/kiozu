@@ -108,7 +108,7 @@ Prompt de instruções(feito pelo seu mestre e criador que se chama L7) para voc
 <div class="bot-message">
  <p style="color: var(--color-f)"> Que tal esta tabela? 😉 <br></p>
   <table style="width: 80%; margin-bottom: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
-    <thead style="background-color: var(--color-p); color: #3F3D4A;">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
       <tr>
         <th style="padding: 15px; text-align: left;">Nome</th>
         <th style="padding: 15px; text-align: left;">Idade</th>
@@ -116,12 +116,12 @@ Prompt de instruções(feito pelo seu mestre e criador que se chama L7) para voc
       </tr>
     </thead>
     <tbody>
-      <tr style="background-color: #3F3D4A; color: var(--color-f);">
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
         <td style="padding: 15px;">João Silva</td>
         <td style="padding: 15px;">30</td>
         <td style="padding: 15px;">São Paulo</td>
       </tr>
-      <tr style="background-color: #4f4d5b; color: var(--color-f);">
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
         <td style="padding: 15px;">Maria Oliveira</td>
         <td style="padding: 15px;">25</td>
         <td style="padding: 15px;">Rio de Janeiro</td>

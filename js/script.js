@@ -37,8 +37,6 @@ const hst = "chat-0";
 let prompt = "";
 var text = "";
 var cooldown = true;
-let chatp = "";
-
 
 ///////// FUNÇÕES GERAIS ///////// 
 
@@ -57,13 +55,14 @@ function pallet() {
   link.setProperty('--color-p', '#aea4e3');
   link.setProperty('--color-s', '#aaa4cc');
   link.setProperty('--color-z', '#3F3D4A');
+  link.setProperty('--color-y', '#4f4d5b');
   link.setProperty('--color-d', '#313038');
   link.setProperty('--color-b', '#1c1b21');
 }
 
 // copia o prompt para a clipboard
 function debug() {
-  navigator.clipboard.writeText(chatp);
+  navigator.clipboard.writeText(chat.innerHTML);
 }
 
 // atualiza a animação do icone de enviar
@@ -101,12 +100,11 @@ function getImg() {
     let idImg = document.getElementById("img_id_"+i);
     if (idImg) {
       let name = idImg.alt;
-      let requestURL = `https://pixabay.com/api/?key=${apiKey}&image_type=all&pretty=true&per_page=20&q=`+name;
+      let requestURL = `https://pixabay.com/api/?key=${apiKey}&image_type=all&pretty=true&per_page=50&q=`+name;
       fetch(requestURL)
        .then(response => response.json())
        .then(data => {
-          console.log(data.hits.length)
-          let img = data.hits[i%3].webformatURL;
+          let img = data.hits[i].webformatURL;
           idImg.src = img;
         })
     }
@@ -164,11 +162,21 @@ fetch(`/history/${hst}.txt`)
     let resposta = response.text();
     
     chat.innerHTML = resposta;
+    gridChat()
     
     loadScreen.style.opacity = 0;
     loadScreen.style.zIndex = -1;
   }
 );
+
+function gridChat(numeroDivs) {
+  let novaDiv = "";
+  for (let i = 0; i < 30; i++) {
+    novaDiv = `\n\n<div id="grid_${i+1}"></div>`;
+    chat.innerHTML += novaDiv;
+  }
+  console.log(chat.innerHTML)
+}
 
 async function sendMessage() {
   const userText = inputField.value;
@@ -176,6 +184,8 @@ async function sendMessage() {
     
     let time = await timeNow();
     let lang = await getLang();
+    
+    let outGrid = prompt+time+lang;
     
     loadMassage.style.transition= "1s";
     loadMassage.style.animation= "appear 0.5s ease";
@@ -188,8 +198,26 @@ async function sendMessage() {
     getImg();
     getVid();
     
-    chat.innerHTML += `<div class="user-message">\n  <p>${userText}</p>\n</div>\n`;
-    enviarMensagem(userText,prompt+time+lang+chat.innerHTML);
+    for (let i = 0; i < 30; i++) { 
+      let grid = document.getElementById("grid_"+(1+i));
+      if (grid.innerHTML.trim() === "") {
+        grid.innerHTML = `\n  <div class="user-message">\n    <p>${userText}</p>\n  </div>\n`;
+        break;
+      }
+    }
+    
+    for (let i = 0; i < 30; i++) { 
+      let grid = document.getElementById("grid_"+(1+i));
+      if (grid.innerHTML.trim() !== "") {
+        outGrid += grid.innerHTML;
+      } else {
+        break;
+      }
+    }
+    
+    console.log(outGrid)
+    
+    enviarMensagem(userText,outGrid);
     inputField.value = '';
     cooldown = false;
   }
@@ -205,7 +233,7 @@ async function enviarMensagem(userMsg,perg) {
   try {
     let result = await model.generateContent(perg);
     let response = await result.response;
-    resposta = response.text();
+    resposta = "\n"+response.text();
     cooldown = true;
     
   } catch (error) {
@@ -221,12 +249,16 @@ async function enviarMensagem(userMsg,perg) {
         </p>
         <br>
         <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: none;">Clique aqui para recomeçar</a> </div>
-      </div>`;
+      </div>\n`;
   }
   
-  text = `${resposta}\n`;
-  chat.innerHTML += text;
-  chatp = chat.innerHTML;
+  for (let i = 0; i < 30; i++) { 
+    let grid = document.getElementById("grid_"+(1+i));
+    if (grid.innerHTML.trim() === "") {
+      grid.innerHTML = resposta;
+      break;
+    }
+  }
   
   loadMassage.style.transition= "0s";
   loadMassage.style.animation= "none";
@@ -260,6 +292,7 @@ inputField.addEventListener('keydown', (event) => {
 ///////// CARREGAR FUNÇÕES ///////// 
 
 icbtnsend("none");
+//window.addEventListener('load', gridChat);
 window.addEventListener('load', pallet);
 
 ///////// ANOTAÇÕES /////////
