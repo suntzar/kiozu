@@ -1,0 +1,149 @@
+<div id="grid_0">
+  <div class="bot-message">
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <style>
+      @keyframes acenar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  </div>
+</div>
+
+
+<div id="grid_1" style="transition: 1s;">
+  <div class="user-message">
+    <p>Resolva a questão 6</p>
+  </div>
+</div>
+
+<div id="grid_2" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"><br>
+  A questão 6 aborda a relação entre a <b style="color: var(--color-p);">intensidade da corrente elétrica</b> que percorre um fio e o <b style="color: var(--color-p);">diâmetro</b> desse fio. <br> <br>
+  Você gostaria de uma explicação sobre o assunto para então resolvermos a questão? 😉
+  </p>
+</div>
+</div>
+
+<div id="grid_3" style="transition: 1s;">
+  <div class="user-message">
+    <p>Ok</p>
+  </div>
+</div>
+
+<div id="grid_4" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Beleza! Vamos entender essa relação! <br> <br> Imagine a corrente elétrica como um fluxo de água passando por um cano.  <br> <br>
+    </p><ul style="list-style-type: disc; margin-left: 40px;">
+      <li style="color: var(--color-f);"> Um cano <b style="color: var(--color-p);">fino</b> oferece <b style="color: var(--color-p);">maior resistência</b> à passagem da água, ou seja, menos água passa por ele ao mesmo tempo. </li>
+      <br>
+      <li style="color: var(--color-f);"> Um cano <b style="color: var(--color-p);">grosso</b> oferece <b style="color: var(--color-p);">menor resistência</b>, permitindo que mais água flua por ele. </li>
+    </ul> <br>
+     Com a corrente elétrica e o diâmetro do fio, a lógica é semelhante! <br> <br>
+     <span style="color: var(--color-p);"><i class="fas fa-lightbulb" style="animation: piscar 1s linear infinite;" aria-hidden="true"></i></span>  Quanto <b style="color: var(--color-p);">maior</b> o diâmetro do fio, <b style="color: var(--color-p);">menor</b> a resistência elétrica e, portanto, <b style="color: var(--color-p);">maior</b> a intensidade da corrente que pode passar por ele. <br> <br>
+    Pronto para analisarmos a questão 6 com base nesse conhecimento? 😊
+  <p></p>
+    <style>
+    @keyframes piscar {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+  </style> 
+</div></div>
+
+<div id="grid_5" style="transition: 1s;">
+  <div class="user-message">
+    <p>Ok</p>
+  </div>
+</div>
+
+<div id="grid_6" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Perfeito! <br><br> A questão 6 diz: <br><br></p>
+  <div style="background-color: var(--color-z); padding: 15px; border-radius: 10px;">
+   <p style="color: var(--color-f);"> 06- Num trecho de um circuito, um fio de cobre é percorrido por uma corrente elétrica de intensidade i, quando aplicada uma ddp U. Ao substituir esse fio por outro, também de cobre, de mesmo comprimento, mas com o diâmetro duas vezes maior, verifica-se que a intensidade da nova corrente elétrica: </p>
+  </div>
+  <br>
+  <p style="color: var(--color-f);">Vamos analisar! <br><br>Lembra da analogia do cano de água? Quando o diâmetro do fio dobra, a resistência elétrica diminui, mas não na mesma proporção. <br><br> A resistência é inversamente proporcional à <b style="color: var(--color-p);">área da seção transversal</b> do fio, que é um círculo. <br><br>A área do círculo é calculada por: <br></p>
+  <p style="text-align: center; color: var(--color-f); font-size: 1.5em;">
+    <math xmlns="http://www.w3.org/1998/Math/MathML">
+      <mi>Área</mi>
+      <mo>=</mo>
+      <mi>π</mi>
+      <mo>⋅</mo>
+      <msup>
+        <mi>r</mi>
+        <mn>2</mn>
+      </msup>
+    </math>
+  </p>
+  <br>
+  <p style="color: var(--color-f);">Onde 'r' é o raio do círculo (metade do diâmetro). <br><br>Se o diâmetro dobra, o raio também dobra, e a área é multiplicada por <b style="color: var(--color-p);">quatro</b> (2² = 4). <br><br> Com a resistência caindo para <b style="color: var(--color-p);">1/4</b> do valor original, o que acontece com a corrente? 🤔 <br><br> Preparado para a resposta final? </p>
+</div>
+</div>
+
+<div id="grid_7" style="transition: 1s;">
+  <div class="user-message">
+    <p>Ok</p>
+  </div>
+</div>
+
+<div id="grid_8" style="transition: 1s;">
+      <div class="bot-message" style="color: #e4e1e2;">
+        <p>
+          <span style="color: #FF8E82;">
+            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Opa!
+          </span> 
+          Parece que algo deu errado por aqui. <br>
+          Você poderia, por favor, reformular sua solicitação? 😊
+        </p>
+        <br>
+        <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: HARD;">Clique aqui para recomeçar</a> </div>
+      </div>
+</div>
+
+<div id="grid_9" style="transition: 1s;"></div>
+
+<div id="grid_10" style="transition: 1s;"></div>
+
+<div id="grid_11" style="transition: 1s;"></div>
+
+<div id="grid_12" style="transition: 1s;"></div>
+
+<div id="grid_13" style="transition: 1s;"></div>
+
+<div id="grid_14" style="transition: 1s;"></div>
+
+<div id="grid_15" style="transition: 1s;"></div>
+
+<div id="grid_16" style="transition: 1s;"></div>
+
+<div id="grid_17" style="transition: 1s;"></div>
+
+<div id="grid_18" style="transition: 1s;"></div>
+
+<div id="grid_19" style="transition: 1s;"></div>
+
+<div id="grid_20" style="transition: 1s;"></div>
+
+<div id="grid_21" style="transition: 1s;"></div>
+
+<div id="grid_22" style="transition: 1s;"></div>
+
+<div id="grid_23" style="transition: 1s;"></div>
+
+<div id="grid_24" style="transition: 1s;"></div>
+
+<div id="grid_25" style="transition: 1s;"></div>
+
+<div id="grid_26" style="transition: 1s;"></div>
+
+<div id="grid_27" style="transition: 1s;"></div>
+
+<div id="grid_28" style="transition: 1s;"></div>
+
+<div id="grid_29" style="transition: 1s;"></div>
+
+<div id="grid_30" style="transition: 1s;"></div>

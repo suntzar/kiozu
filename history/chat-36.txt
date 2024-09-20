@@ -1,0 +1,126 @@
+<div id="grid_0">
+  <div class="bot-message">
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <style>
+      @keyframes acenar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  </div>
+</div>
+
+<div id="grid_1">
+  <div class="user-message">
+    <p>Usando somente css, faça com que quando eu clicar em um parágrafo ele mude de cor e ao clicar novamente volte ao normal e faça esse ciclo de com cor e normal sempre que clicado </p>
+  </div>
+</div>
+
+<div id="grid_2">
+<div class="bot-message">
+  <p style="color: var(--color-f);">Beleza! <br> <span style="color: var(--color-p);"><i class="fas fa-magic" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  É fácil fazer isso com CSS! 😉</p>
+
+  <p style="color: var(--color-f); margin-top: 20px;">Aqui está o código que você pode usar:</p>
+
+  <pre style="background-color: var(--color-d); color: var(--color-f); padding: 15px; border-radius: 10px; overflow: hidden; font-family: 'Courier New', Courier, monospace;">    <span style="color: #ffdb99;">&lt;p </span><span style="color: #ffb266;">class=</span><span style="color: #ffdb99;">"paragrafos_id_001"</span><span style="color: #ffdb99;">&gt;</span>Clique em mim!<span style="color: #ffdb99;">&lt;/p&gt;</span>
+  </pre>
+
+  <p style="color: var(--color-f); margin-top: 20px;">E o CSS para fazer a mágica acontecer:</p>
+
+  <pre style="background-color: var(--color-d); color: var(--color-f); padding: 15px; border-radius: 10px; overflow: hidden; font-family: 'Courier New', Courier, monospace;">    <span style="color: #b0d8ff;">.paragrafos_id_001 </span><span style="color: #ffdb99;">{</span>
+      <span style="color: #ffdb99;">color</span><span style="color: #ffdb99;">:</span><span style="color: #b0d8ff;"> var</span><span style="color: #ffdb99;">(</span><span style="color: #ffdb99;">--color-f</span><span style="color: #ffdb99;">);</span>
+    <span style="color: #ffdb99;">}</span>
+    <span style="color: #b0d8ff;">.paragrafos_id_001</span><span style="color: #ffdb99;">:</span><span style="color: #b0d8ff;">hover </span><span style="color: #ffdb99;">{</span>
+      <span style="color: #ffdb99;">cursor</span><span style="color: #ffdb99;">:</span> <span style="color: #ffdb99;">pointer</span><span style="color: #ffdb99;">;</span>
+    <span style="color: #ffdb99;">}</span>
+    <span style="color: #b0d8ff;">.paragrafos_id_001</span><span style="color: #ffdb99;">:</span><span style="color: #b0d8ff;">active </span><span style="color: #ffdb99;">{</span>
+      <span style="color: #ffdb99;">color</span><span style="color: #ffdb99;">:</span><span style="color: #b0d8ff;"> var</span><span style="color: #ffdb99;">(</span><span style="color: #ffdb99;">--color-p</span><span style="color: #ffdb99;">);</span> 
+    <span style="color: #ffdb99;">}</span>
+  </pre>
+
+  <p style="color: var(--color-f); margin-top: 20px;">Com este código, a cor do texto do parágrafo mudará para a cor Primária quando você clicar nele e voltará para a cor Fonte quando você soltar o clique. 😉</p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div></div>
+
+<div id="grid_3">
+  <div class="user-message">
+    <p>Mas eu quero quero que ele mude de estado a cada click e que o estado seja mantido até o próximo click</p>
+  </div>
+</div>
+
+<div id="grid_4">
+<div class="bot-message">
+  <p style="color: var(--color-f);">Ah, entendi! Você quer que a mudança de cor permaneça após o clique, funcionando como um botão de ligar/desligar, certo?  <br> <span style="color: var(--color-p);"><i class="fas fa-lightbulb" style="animation: piscar 1s linear infinite;" aria-hidden="true"></i></span></p>
+  <p style="color: var(--color-f); margin-top: 20px;">Nesse caso, o CSS puro tem algumas limitações. Ele não consegue "lembrar" do estado anterior após um clique. 🤔</p>
+  <p style="color: var(--color-f); margin-top: 20px;">Para esse tipo de interação, o ideal seria usar um pouco de JavaScript. Mas, como você mencionou que ele não está disponível no momento, a melhor solução seria simular esse comportamento com o que temos. 😊</p>
+  <p style="color: var(--color-f); margin-top: 20px;">Poderíamos usar a técnica de "checkbox hack".  Com ela, um checkbox invisível controlaria o estilo do parágrafo. O que você acha? 😉</p>
+
+  <style>
+    @keyframes piscar {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_5"></div>
+
+<div id="grid_6"></div>
+
+<div id="grid_7"></div>
+
+<div id="grid_8"></div>
+
+<div id="grid_9"></div>
+
+<div id="grid_10"></div>
+
+<div id="grid_11"></div>
+
+<div id="grid_12"></div>
+
+<div id="grid_13"></div>
+
+<div id="grid_14"></div>
+
+<div id="grid_15"></div>
+
+<div id="grid_16"></div>
+
+<div id="grid_17"></div>
+
+<div id="grid_18"></div>
+
+<div id="grid_19"></div>
+
+<div id="grid_20"></div>
+
+<div id="grid_21"></div>
+
+<div id="grid_22"></div>
+
+<div id="grid_23"></div>
+
+<div id="grid_24"></div>
+
+<div id="grid_25"></div>
+
+<div id="grid_26"></div>
+
+<div id="grid_27"></div>
+
+<div id="grid_28"></div>
+
+<div id="grid_29"></div>
+
+<div id="grid_30"></div>

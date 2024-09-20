@@ -2,7 +2,7 @@
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
 const API_KEY = "AIzaSyAeGh0hB_nerwQfsx2UWN0pyZ0r8r3Gd7o";
-//const API_KEY = "AIzaSyCNuer530vvnKBjSUvjK0e6Kcc-0C2knyk";
+// Access your API key (see "Set up your API key" above)
 const genAI = new GoogleGenerativeAI(API_KEY);
 
 
@@ -17,13 +17,7 @@ const inputField = document.querySelector('.input-field');
 const loadMassage = document.querySelector('.load-msg');
 const endLine = document.querySelector('.end-line');
 const sendButton = document.querySelector('.send');
-const sendButtonId = document.getElementById("send");
 const debugButton = document.getElementById("debug");
-const toggleRes = document.getElementById("toggle_id_001");
-const imgDiv = document.querySelector('.imageDiv');
-
-const uploadImage = document.getElementById('uploadImage');
-const imagePreview = document.getElementById('imagePreview');
 
 const usrDiv = document.createElement('div');
 const botDiv = document.createElement('div');
@@ -37,27 +31,6 @@ const audio_err = new Audio('/audio/error.mp3');
 ///////// CONSTANTES ///////// 
 
 const hst = "chat-0";
-
-let liveChat = false;
-
-let safetySetting = [
-  {
-    category: "HARM_CATEGORY_HARASSMENT",
-    threshold: "HARD",
-  },
-  {
-    category: "HARM_CATEGORY_HATE_SPEECH",
-    threshold: "HARD",
-  },
-  {
-    category: "HARM_CATEGORY_SEXUALLY_EXPLICIT",
-    threshold: "HARD",
-  },
-  {
-    category: "HARM_CATEGORY_DANGEROUS_CONTENT",
-    threshold: "HARD",
-  },
-];
 
 ///////// VARIAVEIS ///////// 
 
@@ -96,7 +69,7 @@ function debug() {
 function icbtnsend(trigger) {
   let loopic = '<lord-icon src="https://cdn.lordicon.com/mgtqmgmg.json" trigger="loop" state="loop-spin" colors="primary:#3F3D4A" style="width:0%;height:0%"> </lord-icon>';
   let clickic = '<lord-icon src="https://cdn.lordicon.com/ayhtotha.json" trigger="'+trigger+'" colors="primary:#3F3D4A" style="width:80%;height:80%"> </lord-icon>';
-  sendButtonId.innerHTML = clickic;
+  document.querySelector('.send').innerHTML = clickic;
 }
 
 function timeNow() {
@@ -156,9 +129,7 @@ async function getVid() {
         },
       });
 
-      let videoT = response.data.items.length;
-      let videoId = response.data.items[(i % videoT)].id.videoId;
-      console.log(response.data);
+      const videoId = response.data.items[i].id.videoId;
       console.log(response.data);
       idVid.src = "https://www.youtube.com/embed/"+videoId+"?autoplay=1&mute=0";
     } catch (error) {
@@ -189,8 +160,7 @@ fetch(`/history/${hst}.txt`)
     let result = await model.generateContent(lang+"\n<!-- RETORNE SOMENTE O CONTEUDO ABAIXO NA LINGUA DO USUARIO -->\n"+texto);
     let response = await result.response;
     let resposta = response.text();
-    resposta = resposta.replace(/^```html\b/gm, "")
-    resposta = resposta.replace(/^```\b/gm, "")
+    
     chat.innerHTML = resposta;
     gridChat()
     
@@ -199,41 +169,14 @@ fetch(`/history/${hst}.txt`)
   }
 );
 
-uploadImage.addEventListener('change', (event) => {
-const file = event.target.files[0];
-const reader = new FileReader();
-
-reader.onload = (e) => {
-imagePreview.src = e.target.result;
-};
-
-if (file) {
-  reader.readAsDataURL(file);
-  //imgDiv.style.bottom = "calc(2rem * var(--scl))";
-}
-});
-
 function gridChat(numeroDivs) {
   let novaDiv = "";
-  for (let i = 0; i < 60; i++) {
-    novaDiv = `\n\n<div id="grid_${i+1}" style="transition: 1s;"></div>`;
+  for (let i = 0; i < 30; i++) {
+    novaDiv = `\n\n<div id="grid_${i+1}"></div>`;
     chat.innerHTML += novaDiv;
   }
+  console.log(chat.innerHTML)
 }
-
-
-
-async function fileToGenerativePart(file) {
-  let base64EncodedDataPromise = new Promise((resolve) => {
-    let reader = new FileReader();
-    reader.onloadend = () => resolve(reader.result.split(',')[1]);
-    reader.readAsDataURL(file);
-  });
-  return {
-    inlineData: { data: await base64EncodedDataPromise, mimeType: file.type },
-  };
-}
-
 
 async function sendMessage() {
   const userText = inputField.value;
@@ -248,7 +191,6 @@ async function sendMessage() {
     loadMassage.style.animation= "appear 0.5s ease";
     loadMassage.style.transform = "scale(1)";
     loadMassage.style.opacity = 1;
-    //loadMassage.style.color = getComputedStyle(root).getPropertyValue('--color-p');
     
     icbtnsend('in');
     audio_usr.play();
@@ -256,7 +198,7 @@ async function sendMessage() {
     getImg();
     getVid();
     
-    for (let i = 0; i < 60; i++) { 
+    for (let i = 0; i < 30; i++) { 
       let grid = document.getElementById("grid_"+(1+i));
       if (grid.innerHTML.trim() === "") {
         grid.innerHTML = `\n  <div class="user-message">\n    <p>${userText}</p>\n  </div>\n`;
@@ -264,7 +206,7 @@ async function sendMessage() {
       }
     }
     
-    for (let i = 0; i < 60; i++) { 
+    for (let i = 0; i < 30; i++) { 
       let grid = document.getElementById("grid_"+(1+i));
       if (grid.innerHTML.trim() !== "") {
         outGrid += grid.innerHTML;
@@ -273,12 +215,11 @@ async function sendMessage() {
       }
     }
     
+    console.log(outGrid)
+    
     enviarMensagem(userText,outGrid);
-    //imgDiv.style.bottom = "calc(-2rem * var(--scl))";
     inputField.value = '';
     cooldown = false;
-    liveChat = toggleRes.checked;
-    
   }
 }
 
@@ -286,73 +227,17 @@ async function enviarMensagem(userMsg,perg) {
 
   let lang = await getLang();
   
-  let model = genAI.getGenerativeModel({model: "gemini-1.5-flash", systemInstruction: "Você é um peixinho de olhos bem grandes e penetrantes"});
+  let model = genAI.getGenerativeModel({model: "gemini-1.5-pro"});
   let resposta = "";
   
-  let { totalTokens } = await model.countTokens(perg);
-  console.log("total de tokens presentes na pergunta: " + totalTokens)
-
   try {
-    
-    let text = '\n';
-    let fileInputEl = document.querySelector("input[type=file]");
-    let imageParts = "";
-    let result = "";
-  
-    imageParts = await Promise.all(
-      [...fileInputEl.files].map(fileToGenerativePart)
-    );
-    
-    if (liveChat) {
-    if (imageParts.length == 0) { 
-      result = await model.generateContentStream(perg);
-    } else {
-      result = await model.generateContentStream([perg, ...imageParts]);
-    }
-    
-    for (let i = 0; i < 60; i++) { 
-      let grid = document.getElementById("grid_"+(1+i));
-      if (grid.innerHTML.trim() === "") {
-        for await (const chunk of result.stream) {
-          let chunkText = chunk.text();
-          resposta += chunkText;
-          resposta = resposta.replace(/^```html\b/gm, "")
-          resposta = resposta.replace(/^```\b/gm, "")
-          grid.innerHTML = resposta;
-          endLine.scrollIntoView({ block: "end", behavior: "smooth" });
-        }
-        break;
-      }
-    }
-    }
-    
-    
-    if (!liveChat) {
-    if (imageParts.length == 0) { 
-      result = await model.generateContent(perg);
-    } else {
-      result = await model.generateContent([p3erg, ...imageParts]);
-    }
-    
+    let result = await model.generateContent(perg);
     let response = await result.response;
-    for (let i = 0; i < 60; i++) { 
-      let grid = document.getElementById("grid_"+(1+i));
-      if (grid.innerHTML.trim() === "") {
-        let resposta = response.text();
-        resposta = resposta.replace(/^```html\b/gm, "")
-        resposta = resposta.replace(/^```\b/gm, "")
-        grid.innerHTML = resposta;
-        break;
-      }
-    }
-    }
-    
+    resposta = "\n"+response.text();
     cooldown = true;
     
   } catch (error) {
-    console.error("Ops, algo deu errado:", error);
-    //cooldown = false;
-    cooldown = true;
+    cooldown = false;
     resposta = `
       <div class="bot-message" style="color: #e4e1e2;">
         <p>
@@ -363,21 +248,20 @@ async function enviarMensagem(userMsg,perg) {
           Você poderia, por favor, reformular sua solicitação? 😊
         </p>
         <br>
-        <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: HARD;">Clique aqui para recomeçar</a> </div>
+        <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: none;">Clique aqui para recomeçar</a> </div>
       </div>\n`;
-      
-    for (let i = 0; i < 60; i++) { 
-      let grid = document.getElementById("grid_"+(1+i));
-      if (grid.innerHTML.trim() === "") {
-        grid.innerHTML = resposta;
-        break;
-      }
+  }
+  
+  for (let i = 0; i < 30; i++) { 
+    let grid = document.getElementById("grid_"+(1+i));
+    if (grid.innerHTML.trim() === "") {
+      grid.innerHTML = resposta;
+      break;
     }
   }
-
   
   loadMassage.style.transition= "0s";
-  loadMassage.style.animation= "HARD";
+  loadMassage.style.animation= "none";
   loadMassage.style.transform = "scale(0)";
   loadMassage.style.opacity = 0;
   
@@ -389,7 +273,7 @@ async function enviarMensagem(userMsg,perg) {
 }
 
 // Evento para enviar mensagem quando pressionar o botão "Enviar"
-sendButtonId.addEventListener('click', sendMessage);
+sendButton.addEventListener('click', sendMessage);
 debugButton.addEventListener('click', debug);
 
 // Evento para enviar mensagem quando pressionar Enter no campo de entrada
@@ -407,15 +291,12 @@ inputField.addEventListener('keydown', (event) => {
 
 ///////// CARREGAR FUNÇÕES ///////// 
 
-icbtnsend("HARD");
+icbtnsend("none");
 //window.addEventListener('load', gridChat);
 window.addEventListener('load', pallet);
 
 ///////// ANOTAÇÕES /////////
 /*
-
-      1 tokem tem cerca de 4 caracteres
-      o peso de um tokem por caracter é geralmente 1,6: 60 palavras são 96 tokens 
 
       const prompt = "Quem foi Nicola Tesla?"
       const result = await model.generateContent(prompt);

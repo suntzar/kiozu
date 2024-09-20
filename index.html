@@ -56,6 +56,10 @@
     <script src="https://kit.fontawesome.com/9212850483.js" crossorigin="anonymous"></script>
     <script src="https://cdn.lordicon.com/lordicon.js"></script>
     <div class="top-bar">
+      <div class="toggle-container_id_001">
+        <input type="checkbox" id="toggle_id_001" class="toggle_id_001">
+        <label for="toggle_id_001" class="toggle-label_id_001"> </label>
+      </div>
       <h3>Kiozu bot</h3>
       <button class="icon-b" id="debug">
         <lord-icon class="lord"
@@ -69,7 +73,7 @@
     <div class="container">
       <div class="chat-container">
         <div class="aling-chat">
-          <div class="adss">
+          <div class="ads">
           </div>
           <div class="chat" id="chat"></div>
           <div class="load-msg">
@@ -83,10 +87,20 @@
           </div>
           <div class="end-line" style="padding:  calc(2rem * var(--scl));"></div>
         </div>
+        <div class="imageDiv">
+          <img id="imagePreview" class="image">
+        </div>
         <div class="aling-input">
           <div class="input-bar">
             <input type="text" class="input-field" placeholder="Digite sua mensagem..." maxlength="50000">
-            <button class="send"></button>
+            <div class="send">
+              <input type="file" id="uploadImage" accept="image/*">
+              <label for="uploadImage">
+                <lord-icon src="https://cdn.lordicon.com/wgdqrxxf.json" trigger="click" state="hover-videocam-2" colors="primary:#3F3D4A"  style="width:calc(2.5rem * var(--scl));height:calc(2.5rem * var(--scl)); left: -15%; top: calc(0.15rem * var(--scl)); transform: translateX(-50% , -50%);"></lord-icon>
+              </label>
+            </div>
+            <div style="padding:calc(0.3rem * var(--scl));"></div>
+            <button class="send" id="send"></button>
           </div>
         </div>
       </div>

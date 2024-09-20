@@ -1,6 +1,6 @@
 <div id="grid_0">
   <div class="bot-message">
-    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje?</p>
     <style>
       @keyframes acenar {
         0% { transform: rotate(0deg); }

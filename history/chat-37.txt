@@ -1,0 +1,458 @@
+<div id="grid_0">
+  <div class="bot-message">
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <style>
+      @keyframes acenar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  </div>
+</div>
+
+<div id="grid_1" style="transition: 1s;">
+  <div class="user-message">
+    <p>Refaça a tabela aqui </p>
+  </div>
+</div>
+
+<div id="grid_2" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Entendi! Você quer que eu recrie a tabela, certo? <br> Pode deixar que eu te ajudo! 💪 <br> Só para confirmar, você gostaria da tabela idêntica a essa ou quer fazer alguma modificação? 😊</p>
+</div> 
+</div>
+
+<div id="grid_3" style="transition: 1s;">
+  <div class="user-message">
+    <p>Identica logo após nos adicionamos as modificações </p>
+  </div>
+</div>
+
+<div id="grid_4" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Beleza! <br><span style="color: var(--color-p);"><i class="fas fa-table" aria-hidden="true"></i></span> Uma tabela idêntica chegando! </p>
+
+  <table style="width: 100%; margin: 20px 0; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 10px; text-align: left;">Horário</th>
+        <th style="padding: 10px; text-align: left;">Segunda</th>
+        <th style="padding: 10px; text-align: left;">Terça</th>
+        <th style="padding: 10px; text-align: left;">Quarta</th>
+        <th style="padding: 10px; text-align: left;">Quinta</th>
+        <th style="padding: 10px; text-align: left;">Sexta</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">13:00 - 14:00</td>
+        <td style="padding: 10px;">Matemática</td>
+        <td style="padding: 10px;">Língua Portuguesa</td>
+        <td style="padding: 10px;">Física</td>
+        <td style="padding: 10px;">Química</td>
+        <td style="padding: 10px;">Biologia</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">14:00 - 15:00</td>
+        <td style="padding: 10px;">Matemática</td>
+        <td style="padding: 10px;">Língua Portuguesa</td>
+        <td style="padding: 10px;">Física</td>
+        <td style="padding: 10px;">Química</td>
+        <td style="padding: 10px;">Biologia</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">15:00 - 15:30</td>
+        <td style="padding: 10px;">Intervalo <span style="color: var(--color-p);"><i class="fas fa-mug-hot" aria-hidden="true"></i></span></td>
+        <td style="padding: 10px;">Geografia</td>
+        <td style="padding: 10px;">Sociologia/Filosofia</td>
+        <td style="padding: 10px;">Redação</td>
+        <td style="padding: 10px;">Revisão</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">15:30 - 16:30</td>
+        <td style="padding: 10px;">História</td>
+        <td style="padding: 10px;">Geografia</td>
+        <td style="padding: 10px;">Sociologia/Filosofia</td>
+        <td style="padding: 10px;">Redação</td>
+        <td style="padding: 10px;">Revisão</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">16:30 - 17:30</td>
+        <td style="padding: 10px;">História</td>
+        <td style="padding: 10px;">Geografia</td>
+        <td style="padding: 10px;">Sociologia/Filosofia</td>
+        <td style="padding: 10px;">Redação</td>
+        <td style="padding: 10px;">Revisão</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">17:30 - 18:00</td>
+        <td style="padding: 10px;">Intervalo <span style="color: var(--color-p);"><i class="fas fa-utensils" aria-hidden="true"></i></span></td>
+        <td style="padding: 10px;">Matemática</td>
+        <td style="padding: 10px;">Física</td>
+        <td style="padding: 10px;">Química</td>
+        <td style="padding: 10px;">Biologia</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">18:00 - 19:00</td>
+        <td style="padding: 10px;">Língua Inglesa</td>
+        <td style="padding: 10px;">Matemática</td>
+        <td style="padding: 10px;">Física</td>
+        <td style="padding: 10px;">Química</td>
+        <td style="padding: 10px;">Biologia</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">19:00 - 20:00</td>
+        <td style="padding: 10px;">Língua Inglesa</td>
+        <td style="padding: 10px;">Exercícios</td>
+        <td style="padding: 10px;">Exercícios</td>
+        <td style="padding: 10px;">Exercícios</td>
+        <td style="padding: 10px;">Exercícios</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">20:00 - 21:00</td>
+        <td style="padding: 10px;">Simulados</td>
+        <td style="padding: 10px;">Descanso <span style="color: var(--color-p);"><i class="fas fa-bed" aria-hidden="true"></i></span></td>
+        <td style="padding: 10px;">Estudo dirigido</td>
+        <td style="padding: 10px;">Leitura</td>
+        <td style="padding: 10px;">Revisão geral</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">E aí, o que achou? 😉 <br> Agora, me diga: quais modificações você gostaria de fazer? 🤔</p>
+</div> 
+</div>
+
+<div id="grid_5" style="transition: 1s;">
+  <div class="user-message">
+    <p>Primeiro vamos discutir uma rotina de estudos, quero saber como estudar com qualidade, quanto tempo de estudo e quanto tempo de descanso, quantas pausas e mais</p>
+  </div>
+</div>
+
+<div id="grid_6" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Organizar uma rotina de estudos produtiva é o primeiro passo para o sucesso! <br> <span style="color: var(--color-p);"><i class="fas fa-book-reader" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Vamos conversar sobre alguns pontos importantes! 😊</p>
+  <p style="color: var(--color-f);">Para te ajudar a ter uma rotina de estudos eficiente, preciso entender melhor seus objetivos. Qual o seu principal objetivo com os estudos? É passar no vestibular, melhorar suas notas, aprender um novo idioma, ou outro?</p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div>
+</div>
+
+<div id="grid_7" style="transition: 1s;">
+  <div class="user-message">
+    <p>Passar no vestibular Paes UEMA </p>
+  </div>
+</div>
+
+<div id="grid_8" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Passar no vestibular da UEMA, que legal! É um objetivo e tanto! 💪 Para te ajudar a montar a melhor rotina, me fale um pouco sobre você e seus estudos:</p>
+  <ul style="color: var(--color-f); list-style-type: disc; margin-left: 20px;">
+    <li>Quanto tempo você tem disponível por dia para estudar?</li>
+    <li>Você prefere estudar de manhã, à tarde ou à noite?</li>
+    <li>Já fez cursinho pré-vestibular antes ou está estudando por conta própria?</li>
+    <li>Quais matérias você considera mais fáceis e quais são as mais desafiadoras?</li>
+  </ul>
+  <p style="color: var(--color-f);">Assim que tiver essas informações, posso te dar dicas mais personalizadas para você mandar nesse PAES! 😉</p>
+</div> 
+</div>
+
+<div id="grid_9" style="transition: 1s;">
+  <div class="user-message">
+    <p>De manhã eu tenho aulas, faço cursinho preparatório para o vestibular do Paes UEMA e de resto tenho desde as 13:20 até a hora de dormir para estudar </p>
+  </div>
+</div>
+
+<div id="grid_10" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Perfeito! Entendi a sua rotina. Você tem bastante tempo livre para estudar depois do cursinho, o que é ótimo! 💪 Agora vamos transformar esse tempo em uma rotina poderosa para o PAES UEMA! </p> 
+  <p style="color: var(--color-f);">Que tal começarmos definindo blocos de estudo? Você prefere estudar por um tempo maior seguido de um descanso longo ou intervalos mais frequentes?</p>
+</div>
+</div>
+
+<div id="grid_11" style="transition: 1s;">
+  <div class="user-message">
+    <p>Um tempo grande de estudo seguido de descansos pequenos</p>
+  </div>
+</div>
+
+<div id="grid_12" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Show! Estudar por blocos maiores com descansos estratégicos é uma técnica muito eficiente! 💪 <br> <span style="color: var(--color-p);"><i class="fas fa-brain" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Que tal experimentar a Técnica Pomodoro? Ela se encaixa perfeitamente no seu estilo! 😉</p>
+
+  <p style="color: var(--color-f);"> Basicamente, você vai dividir seu tempo de estudo em blocos de <b style="color: var(--color-p);">25 minutos</b>, com um <b style="color: var(--color-p);">descanso curto de 5 minutos</b> após cada bloco. </p>
+  <p style="color: var(--color-f);">A cada <b style="color: var(--color-p);">4 blocos (2 horas)</b>, você faz um <b style="color: var(--color-p);">descanso maior de 15 a 20 minutos</b>. </p>
+
+  <p style="color: var(--color-f);">Essa técnica é excelente para manter o foco e a produtividade, pois você se concentra em um período menor e depois tem um momento para recarregar as energias.  🚀</p>
+  <p style="color: var(--color-f);">Quer saber mais sobre como aplicar a Técnica Pomodoro na sua rotina ou prefere explorar outras estratégias? 😊</p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_13" style="transition: 1s;">
+  <div class="user-message">
+    <p>Explique esse pomodoro</p>
+  </div>
+</div>
+
+<div id="grid_14" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">A Técnica Pomodoro é uma ótima pedida para quem quer turbinar a concentração!  <br> <span style="color: var(--color-p);"><i class="fas fa-stopwatch" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span> Veja como funciona:</p>
+
+  <div style="background-color: var(--color-z); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+    <h3 style="color: var(--color-p);">1. Escolha uma tarefa:</h3> 
+    <p style="color: var(--color-f);">Comece selecionando a matéria ou tema que você vai estudar.</p>
+  </div>
+
+  <div style="background-color: var(--color-z); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+    <h3 style="color: var(--color-p);">2. Ajuste o timer para 25 minutos:</h3>
+    <p style="color: var(--color-f);">Concentre-se totalmente na tarefa durante esse tempo. Evite distrações! </p>
+  </div>
+
+  <div style="background-color: var(--color-z); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+    <h3 style="color: var(--color-p);">3. Faça uma pausa de 5 minutos:</h3>
+    <p style="color: var(--color-f);">Levante-se, alongue-se, beba água, relaxe a mente! </p>
+  </div>
+
+  <div style="background-color: var(--color-z); padding: 15px; border-radius: 10px; margin-bottom: 10px;">
+    <h3 style="color: var(--color-p);">4. Repita o ciclo:</h3>
+    <p style="color: var(--color-f);">Após cada 4 "pomodoros", faça uma pausa maior de 15-20 minutos. </p>
+  </div>
+
+  <p style="color: var(--color-f);">Com a prática, você vai perceber como essa técnica ajuda a manter o ritmo e a ter mais foco!  💪  <br> Você pode usar um cronômetro físico ou um aplicativo. O importante é seguir os ciclos! </p>
+
+  <p style="color: var(--color-f);">E aí, pronto para experimentar? 😊</p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_15" style="transition: 1s;">
+  <div class="user-message">
+    <p>Gostei </p>
+  </div>
+</div>
+
+<div id="grid_16" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Que bom que curtiu a Técnica Pomodoro! 😄 É uma mão na roda para manter a concentração!  <br>  <span style="color: var(--color-p);"><i class="fas fa-thumbs-up" style="animation: balancar 1s linear infinite;" aria-hidden="true"></i></span></p>
+  <p style="color: var(--color-f);">E aí, bora colocar em prática? 💪 Podemos começar a organizar seus horários na tabela, se quiser! O que me diz?  😉</p>
+  <style>
+    @keyframes balancar {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_17" style="transition: 1s;">
+  <div class="user-message">
+    <p>Sim, as minhas matérias são: LITERATURA, GRAMÁTICA, MATEMÁTICA, HISTÓRIA GERAL, REDAÇÃO, FILOSOFIA, GEOGRAFIA(BR/MA/FÍS), HISTÓRIA(BR/MA), MATEMÁTICA BÁSICA, SOCIOLOGIA, QUÍMICA, BIOLOGIA, FÍSICA INGLÊS, LEITURA DE OBRAS</p>
+  </div>
+</div>
+
+<div id="grid_18" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Uau, temos bastante conteúdo para organizar! 💪 Mas calma, vamos fazer isso juntos, passo a passo! 😉 Antes de inserir tudo na tabela, me fale um pouco sobre como você prefere distribuir as disciplinas ao longo da semana. Que tal responder a estas perguntinhas? 🤔</p>
+  <ul style="color: var(--color-f); list-style-type: disc; margin-left: 20px;">
+    <li>Existe algum dia da semana em que você prefere se dedicar mais a matérias de Exatas, como Matemática e Física?</li>
+    <li>E quanto às matérias de Humanas, como História e Geografia, tem algum dia preferencial para elas? </li>
+    <li>E as Ciências da Natureza, como Química e Biologia, onde você acha que se encaixam melhor na sua semana?</li>
+  </ul>
+  <p style="color: var(--color-f);">Pensar nessas preferências vai nos ajudar a criar uma rotina mais fluida e agradável! 😄</p>
+</div> 
+</div>
+
+<div id="grid_19" style="transition: 1s;">
+  <div class="user-message">
+    <p>Sim, gostaria de uma organização em categorias, partindo de exatas para humanas durante toda a semana, eu só não estudo no dia de domingo</p>
+  </div>
+</div>
+
+<div id="grid_20" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Excelente! Organizar por categorias é uma estratégia inteligente! 💪 Vamos estruturar sua semana de estudos com essa divisão de Exatas para Humanas, lembrando que o domingo será seu dia de descanso merecido! 😄</p>
+
+  <p style="color: var(--color-f);">Que tal começarmos com a distribuição das matérias na tabela? Assim você já visualiza como sua semana ficará organizada. 😉 <br> Podemos fazer isso juntos agora ou você prefere fazer um rascunho antes? O importante é que você se sinta confortável com a organização! 😊</p>
+</div>
+</div>
+
+<div id="grid_21" style="transition: 1s;">
+  <div class="user-message">
+    <p>Vou fazer algumas exigências, começando com leitura das obras que acontecerá em todos os dias de estudo no final dos horários, perto da hora de dormir</p>
+  </div>
+</div>
+
+<div id="grid_22" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Perfeito! Organizar a leitura das obras para o final do dia, perto da hora de dormir, é uma ótima estratégia para relaxar e absorver o conteúdo com mais calma.  <br> <span style="color: var(--color-p);"><i class="fas fa-book" style="animation: balancar 1s linear infinite;" aria-hidden="true"></i></span></p>
+
+  <p style="color: var(--color-f);">Agora, vamos pensar em como encaixar as outras disciplinas na tabela, seguindo a ideia de ir de Exatas para Humanas ao longo da semana.  💪</p>
+
+  <p style="color: var(--color-f);">Podemos começar definindo os horários de cada bloco na tabela, considerando a Técnica Pomodoro. Você prefere blocos de 25 minutos com 5 minutos de descanso ou gostaria de ajustar esses tempos? 😊</p> 
+  <style>
+    @keyframes balancar {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(-10deg); }
+      75% { transform: rotate(10deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_23" style="transition: 1s;">
+  <div class="user-message">
+    <p>Faça como você achar melhor </p>
+  </div>
+</div>
+
+<div id="grid_24" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">Ótimo! Vamos usar a Técnica Pomodoro como base, então!  <br> <span style="color: var(--color-p);"><i class="fas fa-check-circle" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span></p>
+
+  <p style="color: var(--color-f);">Que tal essa estrutura para começarmos a preencher a tabela?</p>
+
+  <table style="width: 100%; margin: 20px 0; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 10px; text-align: left;">Horário</th>
+        <th style="padding: 10px; text-align: left;">Segunda</th>
+        <th style="padding: 10px; text-align: left;">Terça</th>
+        <th style="padding: 10px; text-align: left;">Quarta</th>
+        <th style="padding: 10px; text-align: left;">Quinta</th>
+        <th style="padding: 10px; text-align: left;">Sexta</th>
+        <th style="padding: 10px; text-align: left;">Sábado</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">13:20 - 13:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Revisão Geral (1) - 50 min </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">13:45 - 14:10</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">14:10 - 14:20</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Descanso - 10 min <span style="color: var(--color-p);"><i class="fas fa-coffee" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">14:20 - 14:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Revisão Geral (2) - 50 min</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">14:45 - 15:10</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">15:10 - 15:20</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Descanso - 10 min <span style="color: var(--color-p);"><i class="fas fa-cookie-bite" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">15:20 - 15:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Redação - 50 min </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">15:45 - 16:10</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">16:10 - 16:20</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Descanso - 10 min <span style="color: var(--color-p);"><i class="fas fa-walking" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">16:20 - 16:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Inglês - 50 min</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">16:45 - 17:10</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">17:10 - 17:20</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Descanso - 10 min <span style="color: var(--color-p);"><i class="fas fa-apple-alt" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">17:20 - 17:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exercícios - 50 min</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">17:45 - 18:10</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">18:10 - 18:20</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Descanso - 10 min <span style="color: var(--color-p);"><i class="fas fa-glass-whiskey" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">18:20 - 18:45</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Exatas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Humanas (2) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Ciências da Natureza (1) - 50 min</td>
+        <td style="padding: 10px;" rowspan="2">Conclusão - 50 min</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">18:45 - 19:10</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 10px;">19:10 - 20:10</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Jantar - 1 Hora <span style="color: var(--color-p);"><i class="fas fa-utensils" aria-hidden="true"></i></span> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 10px;">20:10 - 21:10</td>
+        <td colspan="6" style="padding: 10px; text-align: center;">Leitura de Obras - 1 Hora <span style="color: var(--color-p);"><i class="fas fa-book-open" aria-hidden="true"></i></span></td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">Lembre-se: essa é apenas uma sugestão inicial, ok? 😉<br> Podemos ajustar os horários, a duração dos blocos e a distribuição das matérias de acordo com as suas necessidades e preferências! 😊</p>
+
+  <p style="color: var(--color-f);">O que você achou dessa primeira versão? 🤔 Tem alguma parte que você já gostaria de mudar? 😉</p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div></div>
+
+<div id="grid_25" style="transition: 1s;"></div>
+
+<div id="grid_26" style="transition: 1s;"></div>
+
+<div id="grid_27" style="transition: 1s;"></div>
+
+<div id="grid_28" style="transition: 1s;"></div>
+
+<div id="grid_29" style="transition: 1s;"></div>
+
+<div id="grid_30" style="transition: 1s;"></div>

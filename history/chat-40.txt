@@ -1,0 +1,220 @@
+<div id="grid_0">
+  <div class="bot-message">
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <style>
+      @keyframes acenar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  </div>
+</div>
+
+<div id="grid_1" style="transition: 1s;">
+  <div class="user-message">
+    <p>import random import os  numb = random.randint(1, 100) print(numb)  cmd = int(input("Estou pensandom em um numero de 1 a 100, tente adivinha-lo:")) att = 0  def analise():     if numb == cmd:         print("Você acertou! o numero era",numb)     elif att == 0:         print("Você perdeu! suas tentativas acabaram o numero era",numb)     elif numb &gt; cmd:         cmd = input("O numero é menor que ") """ #        att -= 1         analise()     elif numb &lt; cmd:         cmd = int(input("O numero é maior que",cmd,"\n"))  #       att -= 1         analise() """ analise()</p>
+  </div>
+</div>
+
+<div id="grid_2" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Olá! Vejo que você trouxe um código em Python. Pelo que entendi, ele gera um número aleatório e pede para o usuário adivinhar, certo? 😉 </p>
+</div> 
+</div>
+
+<div id="grid_3" style="transition: 1s;">
+  <div class="user-message">
+    <p>Traceback (most recent call last):   File "/data/data/com.termux/files/home/DEV/python/main.py", line 25, in <module>     analise()   File "/data/data/com.termux/files/home/DEV/python/main.py", line 11, in analise     if numb == cmd:                ^^^ UnboundLocalError: cannot access local variable 'cmd' where it is not associated with a value</module></p>
+  </div>
+</div>
+
+<div id="grid_4" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Ah, entendi! Você está tendo um erro de "UnboundLocalError" na linha 11, que menciona a variável 'cmd'. 🤔  <br> Esse erro acontece quando tentamos usar uma variável dentro de uma função, mas ela não foi definida dentro dessa função nem foi passada como argumento. <br><br> No seu caso, a variável 'cmd' está sendo usada na função 'analise()', mas ela foi definida fora da função. Para corrigir isso, você precisa passar 'cmd' como argumento para a função 'analise()', assim:  </p>
+  <br>
+<pre style="color: var(--color-f); font-family: monospace; background-color: var(--color-z); padding: 10px; border-radius: 5px; overflow-x: auto;"><span style="color: #ffdb99;">def</span> <span style="color: #ff6666;">analise</span>(<span style="color: #ffdb99;">cmd</span>):
+    <span style="color: #ffdb99;">if</span> numb == cmd:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você acertou! O número era",</span> numb) 
+    <span style="color: #ffdb99;">elif</span> att == <span style="color: #b0ffb0;">0</span>:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você perdeu! Suas tentativas acabaram. O número era",</span> numb)
+    <span style="color: #ffdb99;">elif</span> numb &gt; cmd:
+        cmd = <span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é menor que "</span>)
+        <span style="color: #ffdb99;">analise</span>(cmd) <span style="color: #ffdb99;"># Chame a função recursivamente com 'cmd'</span>
+    <span style="color: #ffdb99;">elif</span> numb &lt; cmd:
+        cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é maior que "</span>, cmd, <span style="color: #ffdb99;">"\n"</span>))
+        <span style="color: #ffdb99;">analise</span>(cmd) <span style="color: #ffdb99;"># Chame a função recursivamente com 'cmd'</span>
+
+analise(cmd) <span style="color: #ffdb99;"># Passe 'cmd' ao chamar a função inicialmente</span>
+</pre>
+  <br>
+  <p style="color: var(--color-f);"> Com essa alteração, a função 'analise()' saberá o que 'cmd' representa e poderá usá-la corretamente. 😉  </p>
+</div> 
+</div>
+
+<div id="grid_5" style="transition: 1s;">
+  <div class="user-message">
+    <p>Tenho que importa o att tbm?</p>
+  </div>
+</div>
+
+<div id="grid_6" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Excelente pergunta! 🤔  <br> Você está no caminho certo para resolver o problema de escopo!  💪 No entanto, apenas passar 'att' como argumento para a função 'analise()' não vai resolver completamente, pois 'att' está sendo modificado dentro da função. Para contornar isso, podemos usar algumas estratégias:  </p>
+
+  <br>
+
+  <p style="color: var(--color-f);">
+    <span style="color: var(--color-p);"><i class="fas fa-lightbulb" aria-hidden="true"></i></span>
+    <b>Opção 1: Tornar 'att' Global:</b>
+  </p>
+
+<pre style="color: var(--color-f); font-family: monospace; background-color: var(--color-z); padding: 10px; border-radius: 5px; overflow-x: auto;"><span style="color: #ffdb99;">import</span> random
+<span style="color: #ffdb99;">import</span> os
+
+numb = random.<span style="color: #ff6666;">randint</span>(<span style="color: #b0ffb0;">1</span>, <span style="color: #b0ffb0;">100</span>)
+<span style="color: #ffdb99;">print</span>(numb)
+
+cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"Estou pensando em um número de 1 a 100, tente adivinhar: "</span>))
+att = <span style="color: #b0ffb0;">0</span>
+
+<span style="color: #ffdb99;">def</span> <span style="color: #ff6666;">analise</span>(cmd):
+    <span style="color: #c8b0ff;">global</span> att  <span style="color: #3F3D4A;"># Declare 'att' como global dentro da função</span>
+    <span style="color: #ffdb99;">if</span> numb == cmd:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você acertou! O número era",</span> numb)
+    <span style="color: #ffdb99;">elif</span> att == <span style="color: #b0ffb0;">0</span>:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você perdeu! Suas tentativas acabaram. O número era",</span> numb)
+    <span style="color: #ffdb99;">elif</span> numb &gt; cmd:
+        cmd = <span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é menor que "</span>)
+        att -= <span style="color: #b0ffb0;">1</span>
+        <span style="color: #ffdb99;">analise</span>(cmd)
+    <span style="color: #ffdb99;">elif</span> numb &lt; cmd:
+        cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é maior que "</span>, cmd, <span style="color: #ffdb99;">"\n"</span>))
+        att -= <span style="color: #b0ffb0;">1</span>
+        <span style="color: #ffdb99;">analise</span>(cmd)
+
+<span style="color: #ffdb99;">analise</span>(cmd)
+</pre>
+
+  <p style="color: var(--color-f);"> Ao usar <span style="color: #c8b0ff;">global att</span> dentro da função, você indica que está se referindo à variável 'att' definida globalmente.  </p>
+
+  <br>
+
+  <p style="color: var(--color-f);"> Quer conhecer outra opção? 😉 </p>
+</div>
+</div>
+
+<div id="grid_7" style="transition: 1s;">
+  <div class="user-message">
+    <p>Posso referir o cmd como global tbm?</p>
+  </div>
+</div>
+
+<div id="grid_8" style="transition: 1s;">
+      <div class="bot-message" style="color: #e4e1e2;">
+        <p>
+          <span style="color: #FF8E82;">
+            <i class="fas fa-exclamation-triangle" aria-hidden="true"></i> Opa!
+          </span> 
+          Parece que algo deu errado por aqui. <br>
+          Você poderia, por favor, reformular sua solicitação? 😊
+        </p>
+        <br>
+        <div style="text-align: center;"><a onclick="window.location.reload();" style="color: #FF8E82; text-decoration: HARD;">Clique aqui para recomeçar</a> </div>
+      </div>
+</div>
+
+<div id="grid_9" style="transition: 1s;">
+  <div class="user-message">
+    <p>?</p>
+  </div>
+</div>
+
+<div id="grid_10" style="transition: 1s;">
+<div class="bot-message">
+  <p style="color: var(--color-f);"> Sim, você pode usar  <span style="color: #c8b0ff;">global cmd</span>  dentro da função 'analise()' se você pretende modificar o valor de 'cmd' globalmente dentro da função.  <br><br>  No entanto, no seu código, você está reatribuindo valores a 'cmd' dentro da função  <span style="color: #ff6666;">analise()</span>, o que, em Python, cria uma nova variável local com o mesmo nome, em vez de modificar a variável global.  <br><br>  Para modificar a variável global  <span style="color: #ffdb99;">cmd</span>  dentro da função, você precisa declará-la como global usando  <span style="color: #c8b0ff;">global cmd</span>.   <br><br>  Quer que eu te mostre como fazer isso na prática no seu código? 😉 </p>
+</div>
+```
+</div>
+
+<div id="grid_11" style="transition: 1s;">
+  <div class="user-message">
+    <p>Sim </p>
+  </div>
+</div>
+
+<div id="grid_12" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Beleza!  <br> <span style="color: var(--color-p);"><i class="fas fa-tools" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Vamos lá! 😉</p>
+  <br>
+<pre style="color: var(--color-f); font-family: monospace; background-color: var(--color-z); padding: 10px; border-radius: 5px; overflow-x: auto;"><span style="color: #ffdb99;">import</span> random
+<span style="color: #ffdb99;">import</span> os
+
+numb = random.<span style="color: #ff6666;">randint</span>(<span style="color: #b0ffb0;">1</span>, <span style="color: #b0ffb0;">100</span>)
+<span style="color: #ffdb99;">print</span>(numb)
+
+cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"Estou pensando em um número de 1 a 100, tente adivinhar: "</span>))
+att = <span style="color: #b0ffb0;">0</span>
+
+<span style="color: #ffdb99;">def</span> <span style="color: #ff6666;">analise</span>():
+    <span style="color: #c8b0ff;">global</span> cmd  <span style="color: #3F3D4A;"># Agora 'cmd' se refere à variável global</span>
+    <span style="color: #c8b0ff;">global</span> att 
+    <span style="color: #ffdb99;">if</span> numb == cmd:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você acertou! O número era",</span> numb)
+    <span style="color: #ffdb99;">elif</span> att == <span style="color: #b0ffb0;">0</span>:
+        <span style="color: #ffdb99;">print</span>(<span style="color: #ffdb99;">"Você perdeu! Suas tentativas acabaram. O número era",</span> numb)
+    <span style="color: #ffdb99;">elif</span> numb &gt; cmd:
+        cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é menor que: "</span>))
+        att -= <span style="color: #b0ffb0;">1</span>
+        <span style="color: #ffdb99;">analise</span>() <span style="color: #3F3D4A;"># Chama a função recursivamente </span>
+    <span style="color: #ffdb99;">elif</span> numb &lt; cmd:
+        cmd = <span style="color: #ffdb99;">int</span>(<span style="color: #ffdb99;">input</span>(<span style="color: #ffdb99;">"O número é maior que: "</span>))
+        att -= <span style="color: #b0ffb0;">1</span>
+        <span style="color: #ffdb99;">analise</span>() <span style="color: #3F3D4A;"># Chama a função recursivamente </span>
+
+<span style="color: #ffdb99;">analise</span>()
+</pre>
+  <br>
+  <p style="color: var(--color-f);"> Nesse código, a função  <span style="color: #ff6666;">analise()</span>  agora usa  <span style="color: #c8b0ff;">global cmd</span>  para indicar que está modificando a variável global  <span style="color: #ffdb99;">cmd</span>  dentro dela. Legal, né? 😊 <br><br>  Ficou com alguma dúvida?   </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div>
+```</div>
+
+<div id="grid_13" style="transition: 1s;"></div>
+
+<div id="grid_14" style="transition: 1s;"></div>
+
+<div id="grid_15" style="transition: 1s;"></div>
+
+<div id="grid_16" style="transition: 1s;"></div>
+
+<div id="grid_17" style="transition: 1s;"></div>
+
+<div id="grid_18" style="transition: 1s;"></div>
+
+<div id="grid_19" style="transition: 1s;"></div>
+
+<div id="grid_20" style="transition: 1s;"></div>
+
+<div id="grid_21" style="transition: 1s;"></div>
+
+<div id="grid_22" style="transition: 1s;"></div>
+
+<div id="grid_23" style="transition: 1s;"></div>
+
+<div id="grid_24" style="transition: 1s;"></div>
+
+<div id="grid_25" style="transition: 1s;"></div>
+
+<div id="grid_26" style="transition: 1s;"></div>
+
+<div id="grid_27" style="transition: 1s;"></div>
+
+<div id="grid_28" style="transition: 1s;"></div>
+
+<div id="grid_29" style="transition: 1s;"></div>
+
+<div id="grid_30" style="transition: 1s;"></div>

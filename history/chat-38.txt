@@ -1,0 +1,558 @@
+<div id="grid_0">
+  <div class="bot-message">
+    <p style="color: var(--color-f);"> <span style="color: var(--color-p);">Olá!  <i class="fas fa-hand-paper" style="animation: acenar 2s ease infinite; color: var(--color-p);" aria-hidden="true"></i></span><br>Sou o <span style="color: var(--color-p);">Kiozu</span>, como posso te ajudar hoje? 😄</p>
+    <style>
+      @keyframes acenar {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(25deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-25deg); }
+        100% { transform: rotate(0deg); }
+      }
+    </style>
+  </div>
+</div>
+
+
+<div id="grid_1" style="transition: 1s;">
+  <div class="user-message">
+    <p>Faça uma tabela bem estilosa e detalhada para os seguintes horários, mas antes melhore e organize eles: 06:00 - acordar(orar) 06:30 - banho 07:10 - café 07:35 - sair pro curso 08:00/9:40/10:00/11:40/13:20 - horário(aulas no curso) 11:40/13:20 - chegar em casa(tomar banho, comer, se organizar e etc) 12:30/14:00 - início dos estudos(cada matéria tem 2h) 18:30 - caminhada 19:30 - leitura das obras 20:30 - momento com Deus 21:30 - dormir</p>
+  </div>
+</div>
+
+<div id="grid_2" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);"> Entendi! Você quer organizar sua rotina de forma clara e eficiente. Admiro a disciplina! 💪 <br> <span style="color: var(--color-p);"><i class="fas fa-calendar-alt" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Deixa comigo que eu vou te ajudar a visualizar melhor seus horários. 😉</p>
+  <table style="width: 90%; margin: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 15px; text-align: left;">Horário</th>
+        <th style="padding: 15px; text-align: left;">Atividade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">06:00 - 06:30</td>
+        <td style="padding: 15px;">Acordar e Orar 🙏</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">06:30 - 07:10</td>
+        <td style="padding: 15px;">Banho 🚿</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">07:10 - 07:35</td>
+        <td style="padding: 15px;">Café da Manhã ☕</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">07:35 - 08:00</td>
+        <td style="padding: 15px;">Partiu Curso! 🏃‍♂️</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">08:00 - 11:40 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Aulas no Curso 📚</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">11:40 - 12:30</td>
+        <td style="padding: 15px;">Retorno para Casa, Almoço e Organização 🚀</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">12:30 - 18:30 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Sessão de Estudos (2h por matéria) 🤓</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">18:30 - 19:30</td>
+        <td style="padding: 15px;">Caminhada Relaxante 🚶‍♀️</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">19:30 - 20:30</td>
+        <td style="padding: 15px;">Mergulho nas Obras Literárias 📖</td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">20:30 - 21:30</td>
+        <td style="padding: 15px;">Momento com Deus 🙏</td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">21:30</td>
+        <td style="padding: 15px;">Hora de Descansar! 😴</td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);"> A rotina ainda não acabou! 😉 <br> Quer continuar organizando? 😊 </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div>
+</div>
+
+<div id="grid_3" style="transition: 1s;">
+  <div class="user-message">
+    <p>Retire o 08:00 do partil curso e use ícones no lugar dos emojis </p>
+  </div>
+</div>
+
+<div id="grid_4" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">  Prontinho! Já fiz as alterações que você pediu. 😊 <br> <span style="color: var(--color-p);"><i class="fas fa-check-circle" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Dei uma turbinada na tabela com os ícones!  </p>
+  <table style="width: 90%; margin: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 15px; text-align: left;">Horário</th>
+        <th style="padding: 15px; text-align: left;">Atividade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">06:00 - 06:30</td>
+        <td style="padding: 15px;">Acordar e Orar <i class="fas fa-praying-hands" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">06:30 - 07:10</td>
+        <td style="padding: 15px;">Banho <i class="fas fa-shower" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">07:10 - 07:35</td>
+        <td style="padding: 15px;">Café da Manhã <i class="fas fa-coffee" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">07:35 - 09:40</td>
+        <td style="padding: 15px;">Partiu Curso! <i class="fas fa-running" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">09:40 - 11:40 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Aulas no Curso <i class="fas fa-book-reader" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">11:40 - 12:30</td>
+        <td style="padding: 15px;">Retorno para Casa, Almoço e Organização <i class="fas fa-rocket" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">12:30 - 18:30 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Sessão de Estudos (2h por matéria) <i class="fas fa-glasses" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">18:30 - 19:30</td>
+        <td style="padding: 15px;">Caminhada Relaxante <i class="fas fa-walking" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">19:30 - 20:30</td>
+        <td style="padding: 15px;">Mergulho nas Obras Literárias <i class="fas fa-book-open" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">20:30 - 21:30</td>
+        <td style="padding: 15px;">Momento com Deus <i class="fas fa-dove" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">21:30</td>
+        <td style="padding: 15px;">Hora de Descansar! <i class="fas fa-bed" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">  Que tal adicionarmos mais alguma coisa? Um lembrete? Um compromisso? 😊 <br>  Ou podemos partir para outro desafio! O que você acha? 😉  </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+  </style>
+</div> 
+</div>
+
+<div id="grid_5" style="transition: 1s;">
+  <div class="user-message">
+    <p>Retorne as características passadas mas mantenha os ícone e adicione animações em alguns deles </p>
+  </div>
+</div>
+
+<div id="grid_6" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">  Show! Que tal um toque especial para dar mais vida à sua rotina? ✨ <br> <span style="color: var(--color-p);"><i class="fas fa-magic" style="animation: var(--magic) 2s linear infinite;" aria-hidden="true"></i></span>  Adicionei animações em alguns ícones para você!  </p>
+  <table style="width: 90%; margin: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 15px; text-align: left;">Horário</th>
+        <th style="padding: 15px; text-align: left;">Atividade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">06:00 - 06:30</td>
+        <td style="padding: 15px;">Acordar e Orar <i class="fas fa-praying-hands" style="color: var(--color-p); animation: orar 2s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">06:30 - 07:10</td>
+        <td style="padding: 15px;">Banho <i class="fas fa-shower" style="color: var(--color-p); animation: pingar 3s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">07:10 - 07:35</td>
+        <td style="padding: 15px;">Café da Manhã <i class="fas fa-coffee" style="color: var(--color-p); animation: fumegar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">07:35 - 08:00</td>
+        <td style="padding: 15px;">Partiu Curso! <i class="fas fa-running" style="color: var(--color-p); animation: correr 1s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">08:00 - 11:40 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Aulas no Curso <i class="fas fa-book-reader" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">11:40 - 12:30</td>
+        <td style="padding: 15px;">Retorno para Casa, Almoço e Organização <i class="fas fa-rocket" style="color: var(--color-p); animation: decolar 2s ease-out infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">12:30 - 18:30 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Sessão de Estudos (2h por matéria) <i class="fas fa-glasses" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">18:30 - 19:30</td>
+        <td style="padding: 15px;">Caminhada Relaxante <i class="fas fa-walking" style="color: var(--color-p); animation: andar 2s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">19:30 - 20:30</td>
+        <td style="padding: 15px;">Mergulho nas Obras Literárias <i class="fas fa-book-open" style="color: var(--color-p); animation: folhear 4s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">20:30 - 21:30</td>
+        <td style="padding: 15px;">Momento com Deus <i class="fas fa-dove" style="color: var(--color-p); animation: voar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">21:30</td>
+        <td style="padding: 15px;">Hora de Descansar! <i class="fas fa-bed" style="color: var(--color-p); animation: dormir 6s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">  Gostou das animações? Podemos ajustar ou criar novas! 😄 <br>  O que mais você gostaria de fazer agora? 🤔  </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes orar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-5px); }
+      }
+      @keyframes pingar {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; transform: translateY(3px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fumegar {
+        0% { opacity: 0.8; transform: translateY(0); }
+        50% { opacity: 0.5; transform: translateY(-5px); }
+        100% { opacity: 0.8; transform: translateY(0); }
+      }
+      @keyframes correr {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes decolar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+      }
+      @keyframes andar {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px) translateY(-3px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes folhear {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(10deg); }
+      }
+      @keyframes voar {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px) rotate(-5deg); }
+        100% { transform: translateY(0) rotate(0deg); }
+      }
+      @keyframes dormir {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(5deg); }
+      }
+      @keyframes magic {
+      0% { transform: rotate(0deg); }
+      25% { transform: rotate(20deg); }
+      50% { transform: rotate(0deg); }
+      75% { transform: rotate(-20deg); }
+      100% { transform: rotate(0deg); }
+    }
+  </style>
+</div></div>
+
+<div id="grid_7" style="transition: 1s;">
+  <div class="user-message">
+    <p>Deixe a do foguete sem animação e faça o livro balançar levemente num movimento de rotação senoico pequeno</p>
+  </div>
+</div>
+
+<div id="grid_8" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">  Pronto! Ajuste feito no foguete. 🚀 <br>  <span style="color: var(--color-p);"><i class="fas fa-rocket" aria-hidden="true"></i></span>  E para o livro... preparei um balanço especial com um toque de senoide!  <br> <span style="color: var(--color-p);"><i class="fas fa-book-open" style="animation: girarSutil 5s ease-in-out infinite;" aria-hidden="true"></i></span>  Confira!  </p>
+  <table style="width: 90%; margin: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 15px; text-align: left;">Horário</th>
+        <th style="padding: 15px; text-align: left;">Atividade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">06:00 - 06:30</td>
+        <td style="padding: 15px;">Acordar e Orar <i class="fas fa-praying-hands" style="color: var(--color-p); animation: orar 2s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">06:30 - 07:10</td>
+        <td style="padding: 15px;">Banho <i class="fas fa-shower" style="color: var(--color-p); animation: pingar 3s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">07:10 - 07:35</td>
+        <td style="padding: 15px;">Café da Manhã <i class="fas fa-coffee" style="color: var(--color-p); animation: fumegar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">07:35 - 08:00</td>
+        <td style="padding: 15px;">Partiu Curso! <i class="fas fa-running" style="color: var(--color-p); animation: correr 1s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">08:00 - 11:40 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Aulas no Curso <i class="fas fa-book-reader" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">11:40 - 12:30</td>
+        <td style="padding: 15px;">Retorno para Casa, Almoço e Organização <i class="fas fa-rocket" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">12:30 - 18:30 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Sessão de Estudos (2h por matéria) <i class="fas fa-glasses" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">18:30 - 19:30</td>
+        <td style="padding: 15px;">Caminhada Relaxante <i class="fas fa-walking" style="color: var(--color-p); animation: andar 2s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">19:30 - 20:30</td>
+        <td style="padding: 15px;">Mergulho nas Obras Literárias <i class="fas fa-book-open" style="color: var(--color-p); animation: girarSutil 5s ease-in-out infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">20:30 - 21:30</td>
+        <td style="padding: 15px;">Momento com Deus <i class="fas fa-dove" style="color: var(--color-p); animation: voar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">21:30</td>
+        <td style="padding: 15px;">Hora de Descansar! <i class="fas fa-bed" style="color: var(--color-p); animation: dormir 6s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">  Gostou do efeito? Podemos fazer mais ajustes ou até mesmo animar outros elementos da tabela. 😉 <br>  É só me dizer o que você imagina! 😄  </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes orar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-5px); }
+      }
+      @keyframes pingar {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; transform: translateY(3px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fumegar {
+        0% { opacity: 0.8; transform: translateY(0); }
+        50% { opacity: 0.5; transform: translateY(-5px); }
+        100% { opacity: 0.8; transform: translateY(0); }
+      }
+      @keyframes correr {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes decolar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+      }
+      @keyframes andar {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px) translateY(-3px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes folhear {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(10deg); }
+      }
+      @keyframes girarSutil {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(3deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-3deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes voar {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px) rotate(-5deg); }
+        100% { transform: translateY(0) rotate(0deg); }
+      }
+      @keyframes dormir {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(5deg); }
+      }
+  </style>
+</div> 
+</div>
+
+<div id="grid_9" style="transition: 1s;">
+  <div class="user-message">
+    <p>Mude 7:10 para 7:00</p>
+  </div>
+</div>
+
+<div id="grid_10" style="transition: 1s;"><div class="bot-message">
+  <p style="color: var(--color-f);">  <span style="color: var(--color-p);"><i class="fas fa-clock" style="animation: girar 2s linear infinite;" aria-hidden="true"></i></span>  Ajustado! Mudei o horário do café da manhã para as 7:00.  ☕ </p>
+  <table style="width: 90%; margin: 20px auto; border-collapse: collapse; border-radius: 10px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1);">
+    <thead style="background-color: var(--color-p); color: var(--color-z);">
+      <tr>
+        <th style="padding: 15px; text-align: left;">Horário</th>
+        <th style="padding: 15px; text-align: left;">Atividade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">06:00 - 06:30</td>
+        <td style="padding: 15px;">Acordar e Orar <i class="fas fa-praying-hands" style="color: var(--color-p); animation: orar 2s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">06:30 - 07:00</td>
+        <td style="padding: 15px;">Banho <i class="fas fa-shower" style="color: var(--color-p); animation: pingar 3s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">07:00 - 07:35</td>
+        <td style="padding: 15px;">Café da Manhã <i class="fas fa-coffee" style="color: var(--color-p); animation: fumegar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">07:35 - 08:00</td>
+        <td style="padding: 15px;">Partiu Curso! <i class="fas fa-running" style="color: var(--color-p); animation: correr 1s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">08:00 - 11:40 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Aulas no Curso <i class="fas fa-book-reader" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">11:40 - 12:30</td>
+        <td style="padding: 15px;">Retorno para Casa, Almoço e Organização <i class="fas fa-rocket" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">12:30 - 18:30 <br> (Com intervalos) </td>
+        <td style="padding: 15px;">Sessão de Estudos (2h por matéria) <i class="fas fa-glasses" style="color: var(--color-p);" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">18:30 - 19:30</td>
+        <td style="padding: 15px;">Caminhada Relaxante <i class="fas fa-walking" style="color: var(--color-p); animation: andar 2s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">19:30 - 20:30</td>
+        <td style="padding: 15px;">Mergulho nas Obras Literárias <i class="fas fa-book-open" style="color: var(--color-p); animation: girarSutil 5s ease-in-out infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-y); color: var(--color-f);">
+        <td style="padding: 15px;">20:30 - 21:30</td>
+        <td style="padding: 15px;">Momento com Deus <i class="fas fa-dove" style="color: var(--color-p); animation: voar 4s linear infinite;" aria-hidden="true"></i> </td>
+      </tr>
+      <tr style="background-color: var(--color-z); color: var(--color-f);">
+        <td style="padding: 15px;">21:30</td>
+        <td style="padding: 15px;">Hora de Descansar! <i class="fas fa-bed" style="color: var(--color-p); animation: dormir 6s ease-in-out infinite alternate;" aria-hidden="true"></i> </td>
+      </tr>
+    </tbody>
+  </table>
+  <p style="color: var(--color-f);">  Mais alguma mudança ou podemos partir para uma nova tarefa? 😊  </p>
+  <style>
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    @keyframes orar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-5px); }
+      }
+      @keyframes pingar {
+        0% { opacity: 1; }
+        50% { opacity: 0.5; transform: translateY(3px); }
+        100% { opacity: 1; transform: translateY(0); }
+      }
+      @keyframes fumegar {
+        0% { opacity: 0.8; transform: translateY(0); }
+        50% { opacity: 0.5; transform: translateY(-5px); }
+        100% { opacity: 0.8; transform: translateY(0); }
+      }
+      @keyframes correr {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes decolar {
+        0% { transform: translateY(0); }
+        100% { transform: translateY(-10px); }
+      }
+      @keyframes andar {
+        0% { transform: translateX(0); }
+        50% { transform: translateX(5px) translateY(-3px); }
+        100% { transform: translateX(0); }
+      }
+      @keyframes folhear {
+        0% { transform: rotateY(0deg); }
+        100% { transform: rotateY(10deg); }
+      }
+      @keyframes girarSutil {
+        0% { transform: rotate(0deg); }
+        25% { transform: rotate(3deg); }
+        50% { transform: rotate(0deg); }
+        75% { transform: rotate(-3deg); }
+        100% { transform: rotate(0deg); }
+      }
+      @keyframes voar {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-5px) rotate(-5deg); }
+        100% { transform: translateY(0) rotate(0deg); }
+      }
+      @keyframes dormir {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(5deg); }
+      }
+  </style>
+</div>
+</div>
+
+<div id="grid_11" style="transition: 1s;"></div>
+
+<div id="grid_12" style="transition: 1s;"></div>
+
+<div id="grid_13" style="transition: 1s;"></div>
+
+<div id="grid_14" style="transition: 1s;"></div>
+
+<div id="grid_15" style="transition: 1s;"></div>
+
+<div id="grid_16" style="transition: 1s;"></div>
+
+<div id="grid_17" style="transition: 1s;"></div>
+
+<div id="grid_18" style="transition: 1s;"></div>
+
+<div id="grid_19" style="transition: 1s;"></div>
+
+<div id="grid_20" style="transition: 1s;"></div>
+
+<div id="grid_21" style="transition: 1s;"></div>
+
+<div id="grid_22" style="transition: 1s;"></div>
+
+<div id="grid_23" style="transition: 1s;"></div>
+
+<div id="grid_24" style="transition: 1s;"></div>
+
+<div id="grid_25" style="transition: 1s;"></div>
+
+<div id="grid_26" style="transition: 1s;"></div>
+
+<div id="grid_27" style="transition: 1s;"></div>
+
+<div id="grid_28" style="transition: 1s;"></div>
+
+<div id="grid_29" style="transition: 1s;"></div>
+
+<div id="grid_30" style="transition: 1s;"></div>
