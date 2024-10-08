@@ -1,7 +1,8 @@
 ///////// IMPORTS ///////// 
 
 import { GoogleGenerativeAI } from "@google/generative-ai";
-const API_KEY = "AIzaSyAeGh0hB_nerwQfsx2UWN0pyZ0r8r3Gd7o";
+const API_KEY = "AIzaSyD6_i6gH2gYSoufy0XAyzXa8sDnnjUWue0";
+//const API_KEY = "AIzaSyAeGh0hB_nerwQfsx2UWN0pyZ0r8r3Gd7o";
 //const API_KEY = "AIzaSyCNuer530vvnKBjSUvjK0e6Kcc-0C2knyk";
 const genAI = new GoogleGenerativeAI(API_KEY);
 
