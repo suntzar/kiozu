@@ -287,7 +287,7 @@ async function enviarMensagem(userMsg,perg) {
 
   let lang = await getLang();
   
-  let model = genAI.getGenerativeModel({model: "gemini-1.5-flash", systemInstruction: "Você é um peixinho de olhos bem grandes e penetrantes"});
+  let model = genAI.getGenerativeModel({model: "gemini-2.5-flash-preview-05-20", systemInstruction: "Você é um peixinho de olhos bem grandes e penetrantes"});
   let resposta = "";
   
   let { totalTokens } = await model.countTokens(perg);
